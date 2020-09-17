@@ -1,0 +1,62 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55cf429ab030 .scope module, "Exemplo" "Exemplo" 2 14;
+ .timescale 0 0;
+v0x55cf429f13c0_0 .var "p", 0 0;
+v0x55cf429f1490_0 .var "q", 0 0;
+v0x55cf429f1560_0 .net "resp", 0 0, L_0x55cf429f17a0;  1 drivers
+S_0x55cf429ab1b0 .scope module, "ee" "conjuncao" 2 18, 2 6 0, S_0x55cf429ab030;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s"
+    .port_info 1 /INPUT 1 "a"
+    .port_info 2 /INPUT 1 "b"
+L_0x55cf429f1660 .functor NAND 1, v0x55cf429f13c0_0, v0x55cf429f1490_0, C4<1>, C4<1>;
+L_0x55cf429f17a0 .functor NAND 1, L_0x55cf429f1660, L_0x55cf429f1660, C4<1>, C4<1>;
+v0x55cf429e0ba0_0 .net "a", 0 0, v0x55cf429f13c0_0;  1 drivers
+v0x55cf429f0f50_0 .net "b", 0 0, v0x55cf429f1490_0;  1 drivers
+v0x55cf429f1010_0 .net "resp", 0 0, L_0x55cf429f1660;  1 drivers
+v0x55cf429f10b0_0 .net "s", 0 0, L_0x55cf429f17a0;  alias, 1 drivers
+S_0x55cf429f11f0 .scope begin, "main" "main" 2 21, 2 21 0, S_0x55cf429ab030;
+ .timescale 0 0;
+    .scope S_0x55cf429ab030;
+T_0 ;
+    %fork t_1, S_0x55cf429f11f0;
+    %jmp t_0;
+    .scope S_0x55cf429f11f0;
+t_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55cf429f13c0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55cf429f1490_0, 0, 1;
+    %vpi_call 2 25 "$monitor", "(%1b & %1b) -> %1b", v0x55cf429f13c0_0, v0x55cf429f1490_0, v0x55cf429f1560_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55cf429f13c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55cf429f1490_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55cf429f13c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55cf429f1490_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55cf429f13c0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55cf429f1490_0, 0, 1;
+    %end;
+    .scope S_0x55cf429ab030;
+t_0 %join;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Exemplo_0503.v";

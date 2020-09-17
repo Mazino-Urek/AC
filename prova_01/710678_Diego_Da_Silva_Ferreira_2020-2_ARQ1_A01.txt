@@ -1,0 +1,375 @@
+Pontifícia Universidade Católica de Minas Gerais
+Curso de Ciência da Computação
+AC1 - AVALIAÇÃO 01 - Data: 17/09/2020
+
+Nome: Diego Da Silva Ferreira                    Matrícula: 71 06 78          
+
+
+Instruções
+
+Preencher e reenviar.
+
+Haverá apenas três (3) tentativas para postar as respostas.
+
+Escolher a opção correta. Se não houver, marcar X e justificar sua resposta.
+
+01   02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17  18  19  20
+[B] [X] [D] [X] [A] [D] [C] [X] [X] [B] [B] [D] [E] [D] [B] [A] [C] [E] [C] [E]
+
+01.) O número 2223222322322223322332(4), é equivalente em hexadecimal a:
+[ ] a) ABABAEBAEBE
+
+[X] b) ABABAEABEBE
+
+[ ] c) ABABABEBEBE
+
+[ ] d) ABADAEABEBE
+
+[ ] e) ABACAEABEBE
+
+-->Raciocinio
+
+ [22] [23] [22] [23] [22] [32] [22] [23] [32] [23] [32]
+  A    B    A    B    A    E    A    B    E    B    E
+
+
+02.) O valor decimal correspondente ao número em octal 103725 tem:
+[ ] a) 3 algarismos repetidos
+
+[ ] b) 3 algarismos maiores que 5
+
+[ ] c) 3 algarismos iguais e vizinhos
+
+[ ] d) 3 algarismos diferentes
+
+[ ] e) 3 algarismos iguais e separados
+
+--> raciocinio
+
+ 1 * 8⁵ +  0* 8⁴ +  3 * 8³ + 7 * 8²  + 2 * 8¹ +  5 * 8⁰
+ 32768  +   0    +  1536   +  448    +  16    +    5   = 34773
+
+
+03.) O correspondente na base 4 ao número octal 3102 é:
+[ ] a) 120012
+
+[ ] b) 120102
+
+[ ] c) 120112
+
+[X] d) 121002
+
+[ ] e) 122002
+
+-->Raciocinio
+
+ [3]  [1] [0] [2]
+
+04.) Com 11 bits é possível representar todos os valores inteiros com sinal no intervalo
+[ ] a) de -1023 a +2047
+
+[ ] b) de -1047 a +2048
+
+[ ] c) de -2049 a +1027
+
+[ ] d) de -2047 a +2048
+
+[ ] e) de -2048 a +2049
+
+-->Raciocinio
+
+como um bit fica para o sinal, entao temos 10 bits para saber quantos ele representa basta fazer 
+2^n - 1.
+
+2¹⁰ - 1 = 1023
+
+ou seja de -1023 a 1023
+
+
+
+05.) O caractere 'C' vale o mesmo que
+[X] a) 67 em decimal
+
+[ ] b) 104 em octal
+
+[ ] c) 99 em decimal
+
+[ ] d) 50 em hexadecimal
+
+[ ] e) 12 em decimal
+
+-->Raciocinio
+
+seguindo a tabela ascii e considerando que o 'C' é maiusculo tem se que 'C' = 67 na base 10
+
+06.) O código do dígito '4' vale o mesmo que
+[ ] a) 42 em hexadecimal
+
+[ ] b) 62 em octal
+
+[ ] c) 54 em decimal
+
+[X] d) 0310 em quaternário
+
+[ ] e) 00110110 em binário
+
+-->Raciocinio
+
+sabendo que o digito '4' vale 0011 0100 em binario ao realizar o agrupamento tem-se
+
+[00] [11] [01] [00]
+ 0    3    1     0
+
+
+07.) O complemento de um do valor inteiro 17 em um byte é igual a
+[ ] a) 00010001
+
+[ ] b) 00010111
+
+[X] c) 11101110
+
+[ ] d) 11101111
+
+[ ] e) 10001000
+
+-->Raciocinio
+
+convertendo 17 em binario temos 
+17%2 = 1
+8%2  = 0
+4%2  = 0
+2%2  = 0
+2/2  = 1
+
+para atender ao tamanho de um byte é acrescentado 3 zeros a esquerda
+
+17 = 00010001
+
+fazendo o complemento de 1
+
+11101110
+
+
+
+08.) O número negativo (-10) em complemento de 2 representado em um byte vale
+[ ] a) 00001010
+
+[ ] b) 10001010
+
+[ ] c) 10100000
+
+[ ] d) 11101011
+
+[ ] e) 11110110
+
+convetendo -10 temos 
+
+[1]0001010
+
+//o [1] na pfrente representa o sinal
+
+fazendo complemento de 2 temos
+[0]1110110
+
+
+09.) A diferença entre os valores 00100011(2) e 174(8) é igual a
+[ ] a) 10101111(2)
+
+[ ] b) 2223(4)
+
+[ ] c) 147(8)
+
+[ ] d) -87(10)
+
+[ ] e) A7(16)
+
+--> convertendo ambos pra decimal temos 
+00100011 = 35
+
+174 = 124
+
+124 - 35 = 89
+
+
+
+10.) O valor decimal correspondente ao número binário 100,011 é
+[ ] a) 4,125
+
+[X] b) 4,375
+
+[ ] c) 4,5
+
+[ ] d) 4,625
+
+[ ] e) 4,75
+
+--> raciocionio
+1 * 2² + 0 * 2¹ + 0 * 2⁰,0 * 2^-1 +  1 * 2^-2 + 1 * 2^-3 = 4,375 na base 10
+
+
+
+
+11.) A tabela verdade para a expressão em Verilog (P | Q) & (~ Q) será igual a
+[ ] a) 0100
+
+[X] b) 0010
+
+[ ] c) 0110
+
+[ ] d) 1010
+
+[ ] e) 0001
+
+-->Racicionio
+
+p q  (P | Q) & (~ Q)
+0 0   0
+0 1   0
+1 0   1
+1 1   0
+
+
+
+12.) A negação da proposição ((X==0) && (Y<=0)) é o mesmo que
+[ ] a) (X!=0) && (Y>=0)
+
+[ ] b) ! (X==0) || !(Y>0)
+
+[ ] c) (X!=0) && !(Y<=0)
+
+[X] d) !(X==0) || !(Y<=0)
+
+[ ] e) !((X==0) || !(Y<=0))
+
+-->Raciocinio
+
+nota-se que ao negar a espressão ela passa a dar true para quis quer valores diferentes de  1 e 1 
+portando trocase a porta end por um porta or e nega-se ambas as espressões
+
+
+13.) A tabela verdade de duas variáveis p e q é 0 1 0 1, é o mesmo que
+[ ] a) OR(AND(NOT(p),q),NAND(p,q))
+
+[ ] b) OR(NAND(p,q),AND(p,q))
+
+[ ] c) OR(AND(p,NOT(q)),AND(p,q))
+
+[ ] d) OR(AND(p,NOT(q)),NAND(p,q))
+
+[X] e) OR(AND(NOT(p),q),AND(p,q) )
+
+-->raciocinio
+
+utilizei a tabela verdade
+
+
+
+14.) Qual das afirmações abaixo será sempre falsa?
+[ ] a) P || P
+
+[ ] b) ! P && ! P
+
+[ ] c) P || ! P
+
+[X] d) ! P && P
+
+[ ] e) P && P
+
+--> Raciocinio
+ao se utilizar uma porta and, que so da true casso ambas as variaveis forem true, com uma mesma variavel sendo
+uma delas negada sempre dara false
+
+
+15.) A porta lógica equivalente à afirmação "pelo menos um igual a um" é
+[ ] a) NAND
+
+[X] b) OR
+
+[ ] c) XOR
+
+[ ] d) NOR
+
+[ ] e) XNOR
+
+-->Racicionio
+
+a porta or sempre dara 1 caso aja apenas uma das veriaveis iguais a 1
+
+
+16.) A afirmação "apenas um igual a um" para três variáveis ocorrerá nos mintermos
+[X] a) m(1,2,4)
+
+[ ] b) m(1,3,4)
+
+[ ] c) m(1,3,7)
+
+[ ] d) m(2,3,4)
+
+[ ] e) m(1,3,5)
+
+-->Raciocinio
+
+apenas um deles pode ser igual a 1 para que a resposta seja igual a 1
+portando utilizando a tabela verdade chegase a resposta
+
+
+17.) A expressão SoP(1,4,6,7) equivale a
+[ ] a) 01001110(2)
+
+[ ] b) 4D(16)
+
+[X] c) ~a&~b&c|a&~c|a&b (Verilog)
+
+[ ] d) (a+c)(a+b')(a+b+c)
+
+[ ] e) a'b'c+a'b'c'+abc'+abc
+
+-->Raciocinio
+
+ao seguir a tabela verdade os mintermos correspondem a espressão
+
+
+18.) A expressão SoP(0,3) representa o mesmo que os mintermos
+[ ] a) x'y+x y'
+
+[ ] b) x'y'+x'y
+
+[ ] c) x y'+x y
+
+[ ] d) x'y'+x y'
+
+[X] e) x'y'+x y
+
+--> raciocinio 
+
+testei pela tabela verdade
+
+
+19.) A tabela-verdade equivalente aos mintermos x'y'z+x'yz'+x y'z'+xyz é
+[ ] a) 01100101
+
+[ ] b) 11010010
+
+[ ] c) 01101001
+
+[ ] d) 10100110
+
+[ ] e) 00110101
+
+20.) A expressão or(xor(a,c), not (nor(b',d')) é equivalente a
+[ ] a) PoS(0,10)
+
+[ ] b) 0110 1110
+
+[ ] c) a'.c+b.d+a.c'
+
+[ ] d) (A+C')(A'+C)(B'+D')
+
+[ ] e) SoP(1,2,3,5,6,7,8,9,11,12,13,14,15)
+
+
+
+
+
+
+
