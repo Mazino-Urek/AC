@@ -1,0 +1,20 @@
+//Nome: Diego Da Silva Ferreira
+//Turma: 71 06 78
+
+
+    LXI H,C050 //endereço dado1
+    MOV B,M    //B = MEM[dado1]
+    
+    INX H      //endereço dado2
+    MOV C,M    //C = MEM[dado2]
+    
+    INX H      //endereço dado3
+    MOV D,M    //D = MEM[dado3]
+    
+    ADD B      //A = A + B
+    ADD C      //A = A + C
+    ADD D      //D = A + D
+
+    STA C053   //MEM[dado4] = A
+    HLT        //FIM
+

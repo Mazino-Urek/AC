@@ -1,0 +1,41 @@
+//Nome: Diego Da Silva Ferreira
+//Matricula: 71 06 78
+
+    //caregando o registrador B
+    MVI B,02H
+
+    //Primeira divisão
+    MVI C,FFH
+    LXI H,C050
+    MOV A,M
+    REPEAT: INR C
+    SUB B
+    JNC REPEAT
+    MOV D,C
+
+    //segunda divisão
+    MVI C,FFH
+    INX H
+    MOV A,M
+    REP: INR C
+    SUB B
+    JNC REP
+    ADD B
+    MOV E,A
+
+    //soma
+    MOV A,D
+    ADD E
+    INX H
+    MOV M,A
+
+    HLT
+
+//DADOS
+//DADO1 -> C050
+//DADO2 -> C051
+//DADO3 -> C052
+
+//OPERAÇÃO REALIZADA
+// DADO3 = DADO1 / 2 + DADO2 % 2
+

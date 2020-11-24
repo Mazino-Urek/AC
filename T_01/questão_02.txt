@@ -1,0 +1,18 @@
+questão 02:  Identificar a referência segundo os padrões de citação para 
+artigo científico.
+
+
+Codá, Luiza M. R. Dispositivos Lógicos Programaveis. Laboratorio de Eletronica
+Digital, São Paulo, p 1-32. 2014. Disponivel em: <https://edisciplinas.usp.br/pluginfile.php/530826/mod_resource/content/1/DISPOSITIVOS%20L%C3%93GICOS%20PROGRAM%C3%81VEIS_2014.pdf>
+Acesso em: 13 out 2020
+
+
+Freitas, Tiago; Pasqualinoto, Thiago; Leão, Juliano. O CPLD. Centro de
+treinamento SENAI, São Paulo, p 1-51. 2005. Disponivel em: <http://www.optotech.net.br/msx/cpld/11-55-1-PB.pdf>
+Acesso em: 13 out 2020
+
+
+
+Weber, André; Cechinel, Helenluciany; Theisges, Maria. Arquiteturas FPGAs e CPLDs da ALTERA. p 1-8. 2016. Disponivel em: <https://wiki.sj.ifsc.edu.br/images/2/2a/DLP29006-AE1-Tema1-2016-1.pdf>
+Acesso em: 13 out 2020
+

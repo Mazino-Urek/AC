@@ -1,0 +1,18 @@
+//Nome: Diego Da silva Ferreira
+//Matricula: 71 06 78
+//dado04 = dado01 - dado02 + dado03
+//Manually strore 1st no in the memory location C050
+//Manually store 2nd no in the memory location C051
+//Manually store 2nd no in the memory location C052
+//Result is stored in C053
+
+LXI H,C050     // endereço do dado1
+MOV A,M        // A = MEM[dado1]
+INX H          // endereço do dado2
+SUB M          // A = A - MEM[dado2]
+INX H          // endereço do dado3
+ADD M          // A = A + MEM[dado3]
+INX H          // endereço do dado4
+MOV M,A        // MEM[dado4] = A (acomulador)
+HLT            // Fim do programa
+

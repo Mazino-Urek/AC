@@ -1,0 +1,13 @@
+questão 04: Diferenciar (sugestão: montar uma tabela)
+
+
+----------------------------------
+     |     AND     |     OR      |
+----------------------------------
+PROM |    fixa     | programavel |
+----------------------------------
+PLA  | programavel | programavel |
+----------------------------------
+PAL  | programavel |    fixa     |
+----------------------------------
+

@@ -1,0 +1,18 @@
+//Nome: Diego Da Silva Ferreira
+/Matricula: 71 06 78
+
+    MVI B,02H   //B = 2
+    MVI C,FFH   //C = FF
+    LXI H,C050  //endereço dado1
+    MOV A,M     //A = MEM[dado1]
+    REP: INR C  //C = C + 1
+    SUB B       //A = A -b
+    JNC REP     //(A > 0)? REP ; siga 
+    ADD B       //A = A + B
+    INX H       //endereço dado2
+    MOV M,A     //MEM[dado2] = A
+    HLT         //FIM
+    
+    
+    
+    

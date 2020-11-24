@@ -1,0 +1,26 @@
+Questão 03: Segundo os textos recomendados, definir e caracterizar
+
+ASIC: é um dispositivo criado visando um proposito especifico. Este tipo
+de projeto demanda muito tempo para o desenvolvimento e alto investimento.
+Em contra partida oferencem alto desempenho e baxo consumo energetico.
+
+
+ASSP: É essencialmente um ASIC. Um ASSP se diferencia apenas por ser um 
+dispositivo de proposito mais geral, sendo usado por diferentes sistemas.
+
+
+SPLD: Caracteriza-se pela capacidade de programação pelo usuario, eliminando
+assim o processo de fabricação. Possui baixo custo custo e implemantação 
+mais rapida.
+
+
+CPLD: Sua arquitetura basea-se em integrar diversos SPLDs em um unico chip.
+
+
+SOC: É essencialmente um ASIC ou ASSP, porém este se caracteriza por 
+possuir um ou mais processadores em sua conposição. 
+
+FPGA: Consiste em uma matriz de portas logicas programaveis chamados 
+blocos. Seu grande diferencial é a capacidade de configuração do seu 
+hardware, podendo desempenhar quais quer combinações de funções digitais 
+desejadas.

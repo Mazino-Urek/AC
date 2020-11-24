@@ -1,0 +1,52 @@
+//Nome: Diego Da Silva Ferreira
+//Turma: 71 06 78
+
+
+//primeira soma inicio
+	LHLD C050
+	XCHG
+	LHLD C052
+	MVI C,00
+	DAD D
+	JNC AHEAD
+	INR C
+AHEAD:	SHLD C060
+//primeira soma fim
+
+//complemanto de 2 inicio
+	LXI H,C054 //endereço do dado3
+	MVI B,00
+	MOV A,M
+	CMA
+	ADI 01
+	STA C062
+	JNC GO
+	INR B
+GO:	INX H
+	MOV A,M
+	CMA 
+	STA C063
+//complemento de dois fim
+
+//Soma com o complemento de 2 inicio
+	LHLD C060
+	XCHG
+	LHLD C062
+	MVI C,00
+	DAD D
+	JNC AHEAF
+	INR C
+AHEAF:	SHLD C064
+//Soma com o complemento de 2 fim
+
+	HLT //fim do programa
+
+//Area de dados
+//dado1: C050-C051
+//dado2: C052-C053
+//dado3: C054-C055
+//dado4: C064-C065 (resultado da expressão aritimética)
+
+//resultado da primeiro soma(dado1 + dado2)--> dado5: C060-C061
+//resultado do complemento de 2(dao03)-------> dado6: C062-C063 
+
